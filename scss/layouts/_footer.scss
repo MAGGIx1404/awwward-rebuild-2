@@ -1,0 +1,21 @@
+// footer
+
+footer {
+  background-color: $black;
+
+  .mini-container {
+    background-color: $soft;
+    height: 77vh;
+    padding: 3rem 7rem;
+
+    .left-foot {
+      flex: 0 0 60%;
+      max-width: 60%;
+    }
+
+    .right-foot {
+      flex: 0 0 40%;
+      max-width: 40%;
+    }
+  }
+}

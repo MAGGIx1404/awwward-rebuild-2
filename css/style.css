@@ -215,6 +215,12 @@ html {
 .title-2 {
   font-size: 7rem; }
 
+.title-3 {
+  font-size: 6rem; }
+
+.sub-title {
+  font-size: 2.5rem; }
+
 .full-size {
   width: 100%;
   height: 100%; }
@@ -289,6 +295,19 @@ html {
         background-color: #1c1c1d;
         border-radius: 50%; }
 
+footer {
+  background-color: #000000; }
+  footer .mini-container {
+    background-color: #efe9d0;
+    height: 77vh;
+    padding: 3rem 7rem; }
+    footer .mini-container .left-foot {
+      flex: 0 0 60%;
+      max-width: 60%; }
+    footer .mini-container .right-foot {
+      flex: 0 0 40%;
+      max-width: 40%; }
+
 button,
 a {
   font-family: "Poppins", sans-serif; }
@@ -327,7 +346,12 @@ a {
 
 /*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 html.has-scroll-dragging {
   -webkit-user-select: none;
@@ -390,7 +414,8 @@ html.has-scroll-dragging {
   position: absolute;
   right: 0;
   top: 0;
-  width: 7px; }
+  width: 7px;
+  display: none; }
 
 .has-scroll-dragging .c-scrollbar_thumb {
   cursor: -webkit-grabbing;
@@ -505,7 +530,7 @@ html.has-scroll-dragging {
         top: 2rem; }
         .intro .mini-container .intro-pic .img-box img {
           transform-origin: top;
-          transform: scale(1.4);
+          transform: scale(1.4, 1);
           width: 100%;
           height: 100%; }
       .intro .mini-container .intro-pic .bg-container {
@@ -514,3 +539,197 @@ html.has-scroll-dragging {
         position: absolute;
         bottom: 0;
         background-color: #ecdabc; }
+
+.news {
+  max-height: 100vh;
+  overflow: hidden; }
+  .news .bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1.2, 1.4);
+    z-index: 1; }
+    .news .bg-container .parallax-container {
+      background-position: top !important;
+      background-size: cover !important;
+      transform-origin: top; }
+  .news .text-box {
+    z-index: 3;
+    width: 215rem; }
+    .news .text-box h1 {
+      font-weight: 600;
+      font-style: italic;
+      color: #ffffff;
+      animation: roll 15s linear infinite;
+      width: 215rem;
+      text-shadow: 215rem 0 #ffffff, calc(215rem * 2) 0 #ffffff, calc(215rem * 3) 0 #ffffff; }
+  .news .mini-container {
+    position: absolute;
+    height: 100vh; }
+    .news .mini-container .img-box {
+      position: absolute;
+      right: 0;
+      width: 24rem;
+      height: 35rem;
+      z-index: 5;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+      .news .mini-container .img-box:hover img {
+        filter: grayscale(0.4); }
+      .news .mini-container .img-box img {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.8, 1);
+        align-tracks: center;
+        transition: all 0.5s ease; }
+
+@keyframes roll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-100%); } }
+
+.challange .container h1 {
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.2; }
+
+.contact {
+  max-height: 100vh; }
+  .contact .left-contact {
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 100vh;
+    background-color: #000000;
+    text-align: center; }
+    .contact .left-contact p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: 2px; }
+    .contact .left-contact h4 {
+      font-style: italic;
+      color: #8e6e35;
+      font-weight: 500;
+      line-height: 1.3;
+      width: 30rem;
+      margin: 2rem 0 3rem 0; }
+    .contact .left-contact form {
+      width: 60%; }
+      .contact .left-contact form input[type="email"] {
+        border: 1px solid #8e6e35;
+        padding: 1.5rem 1rem;
+        background-color: transparent;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #ffffff;
+        width: 100%;
+        height: fit-content; }
+      .contact .left-contact form input[type="submit"] {
+        border: 1px solid #8e6e35;
+        color: #543c10;
+        padding: 1.5rem 1rem;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 300; }
+        .contact .left-contact form input[type="submit"]:hover {
+          color: #ffffff;
+          background-color: #543c10;
+          border: 1px solid #543c10; }
+  .contact .right-contact {
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 100vh;
+    position: relative;
+    background-color: #ceb286; }
+    .contact .right-contact h1 {
+      font-weight: 500;
+      line-height: 1.2; }
+    .contact .right-contact .img-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24rem;
+      height: 32rem;
+      opacity: 0.9; }
+      .contact .right-contact .img-box img {
+        transform: center;
+        transform: scale(1.4, 1.7); }
+
+.oth {
+  background-color: #ffffff; }
+  .oth .mini-container p.p-one {
+    font-size: 1.2rem;
+    font-weight: 600; }
+  .oth .mini-container h1 {
+    font-weight: 600;
+    color: #8e6e35;
+    letter-spacing: 5px;
+    margin-top: 2rem; }
+  .oth .mini-container .oth-content {
+    margin-top: 3rem;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 5rem; }
+    .oth .mini-container .oth-content :after {
+      content: "";
+      height: 100%;
+      width: 1px;
+      background-color: #ceb286;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      z-index: 2; }
+    .oth .mini-container .oth-content .left-oth {
+      flex: 0 0 50%;
+      max-width: 50%; }
+      .oth .mini-container .oth-content .left-oth p {
+        width: 90%; }
+      .oth .mini-container .oth-content .left-oth p.thin-p {
+        font-weight: 600;
+        margin-bottom: 2rem; }
+    .oth .mini-container .oth-content .right-oth {
+      flex: 0 0 50%;
+      max-width: 50%; }
+      .oth .mini-container .oth-content .right-oth p {
+        width: 90%; }
+        .oth .mini-container .oth-content .right-oth p:nth-last-of-type(2) {
+          margin-bottom: 2rem; }
+  .oth .mini-container a.btn {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1c1c1d;
+    background-color: #ecdabc;
+    width: 14rem;
+    height: 4rem;
+    position: relative;
+    overflow: hidden; }
+    .oth .mini-container a.btn::after {
+      content: attr(data-name);
+      font-size: 1rem;
+      font-weight: 500;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: #000000;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      transform: translateY(100%); }
+    .oth .mini-container a.btn span {
+      position: absolute;
+      transition: all 0.5s ease; }
+    .oth .mini-container a.btn:hover span {
+      transform: translateY(5rem); }
+    .oth .mini-container a.btn:hover::after {
+      transform: translateY(0); }

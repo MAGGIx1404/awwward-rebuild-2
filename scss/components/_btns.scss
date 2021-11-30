@@ -1,0 +1,46 @@
+// btns styles
+
+button,
+a {
+  font-family: $pop-font;
+}
+
+.hover-btn {
+  font-size: $small-font;
+  font-weight: 500;
+  padding: 0.3rem 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    color: $color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color;
+    transform-origin: right;
+    transform: scaleX(0);
+    @include transform__one;
+  }
+
+  &:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+}
+
+.logo-btn {
+  width: fit-content;
+  height: fit-content;
+
+  img {
+    width: 10rem;
+    height: fit-content;
+  }
+}

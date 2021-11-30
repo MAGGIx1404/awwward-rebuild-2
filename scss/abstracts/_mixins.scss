@@ -1,0 +1,7 @@
+// variables
+
+@mixin transform__one {
+  transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -moz-transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+}

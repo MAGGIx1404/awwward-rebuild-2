@@ -1,0 +1,45 @@
+// import font families
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+@font-face {
+  font-family: "canela";
+  src: url(../fonts/canela.ttf);
+}
+
+// root
+
+// font-size
+$h1-font: 13vw;
+$res-h1-font: clamp(60px, 21vw, 120px);
+$h2-font: 7rem;
+$h3-font: clamp(20px, 10vw, 60px);
+$h4-font: 2rem;
+$a-font: 1.2rem;
+$small-font: 1rem;
+// font-families
+$pop-font: "Poppins", sans-serif;
+$can-font: "canela";
+
+//  colors
+$color: #8e6e35;
+$dark: #1c1c1d;
+$soft: #efe9d0;
+$decor: #ecdabc;
+$line: #ceb286;
+$strong: #543c10;
+$white: #ffffff;
+
+// body
+
+body {
+  font-size: 1rem;
+  overflow-x: hidden;
+  font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  overscroll-behavior: none;
+  font-family: "canela";
+  background-color: $soft;
+}

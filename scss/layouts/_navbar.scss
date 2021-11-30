@@ -1,0 +1,48 @@
+// nav
+
+.nav {
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  transition: all 0.5s ease;
+
+  &.active {
+    pointer-events: none;
+
+    .nav-btn {
+      opacity: 0;
+    }
+  }
+
+  .shop-btn {
+    width: 6rem;
+    height: fit-content;
+
+    img {
+      width: $small-font;
+      height: $small-font;
+      position: absolute;
+      transform: scale(0.9);
+      transform-origin: center;
+    }
+
+    div {
+      position: relative;
+      color: $dark;
+
+      :hover {
+        color: $color;
+      }
+
+      &.img-box {
+        width: $h4-font;
+        height: $h4-font;
+        background-color: $dark;
+        border-radius: 50%;
+      }
+    }
+  }
+}

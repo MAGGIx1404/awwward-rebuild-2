@@ -1,0 +1,72 @@
+// utilities classes
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.text-box {
+  position: relative;
+  overflow: hidden;
+  line-height: 2;
+  width: 100%;
+  height: auto;
+}
+
+.img-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.transition {
+  transition: all 0.5s ease;
+}
+
+.title {
+  font-size: $h1-font;
+  font-weight: 600;
+  letter-spacing: 8px;
+}
+
+.title-2 {
+  font-size: $h2-font;
+}
+
+.full-size {
+  width: 100%;
+  height: 100%;
+}
+
+.pad-section {
+  padding: 10rem 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.paragraph {
+  font-family: $pop-font;
+  font-size: $small-font;
+  line-height: 2;
+  color: $dark;
+  font-weight: 400;
+}

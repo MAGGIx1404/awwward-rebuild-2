@@ -1,0 +1,163 @@
+// banner
+
+.banner {
+  overflow: hidden;
+
+  .bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: scale(1.3);
+    z-index: 1;
+
+    .parallax-container {
+      background-size: cover !important;
+      background-position: center !important;
+      transform-origin: top;
+    }
+  }
+
+  h1 {
+    position: relative;
+    z-index: 2;
+    color: $white;
+  }
+}
+
+.about {
+  .container {
+    .text-box {
+      text-align: center;
+      position: relative;
+
+      &:nth-of-type(2) {
+        margin-top: 2rem;
+      }
+
+      h6 {
+        font-size: $small-font;
+        font-family: $pop-font;
+        font-weight: 600;
+        color: $color;
+        letter-spacing: 4px;
+        line-height: $h4-font;
+
+        span {
+          padding: $small-font;
+          border: 2px solid $color;
+          line-height: $a-font;
+          border-radius: 50%;
+          font-family: $can-font;
+        }
+      }
+
+      h1 {
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        word-spacing: 4px;
+
+        div {
+          width: 13rem;
+          height: 8rem;
+          overflow: hidden;
+          margin: 0 0.5rem;
+
+          img {
+            transition: all 0.5s ease;
+            transform-origin: center;
+          }
+
+          &:hover img {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+.intro {
+  max-height: 100vh;
+
+  .mini-container {
+    height: 800px;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .intro-content {
+      flex: 0 0 45%;
+      max-width: 45%;
+      position: relative;
+      justify-content: flex-end;
+      padding: 5rem 0;
+
+      .text-box:not(.parallax-box) {
+        padding: 1.2rem 0;
+        border-top: 1px solid $line;
+
+        &:nth-of-type(1) {
+          margin-top: 2rem;
+        }
+
+        &:nth-of-type(3) {
+          border-bottom: 1px solid $line;
+        }
+
+        .text-box p {
+          font-size: $a-font;
+        }
+      }
+      .parallax-box {
+        position: absolute;
+        top: 10vh;
+        left: -20rem;
+        width: 40rem;
+        height: fit-content;
+        z-index: 4;
+        pointer-events: none;
+
+        h1 {
+          line-height: 1.2;
+          color: $color;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .intro-pic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex: 0 0 50%;
+      max-width: 50%;
+      height: 100%;
+
+      .img-box {
+        position: absolute;
+        z-index: 2;
+        height: 80%;
+        width: 30rem;
+        top: 2rem;
+
+        img {
+          transform-origin: top;
+          transform: scale(1.4);
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .bg-container {
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        bottom: 0;
+        background-color: $decor;
+      }
+    }
+  }
+}

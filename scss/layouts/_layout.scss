@@ -1,0 +1,34 @@
+// wrapper and scroll container
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+
+  .scroll__container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// container and grid system
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mini-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.nav__container {
+  max-width: 90%;
+  margin: 0 auto;
+}

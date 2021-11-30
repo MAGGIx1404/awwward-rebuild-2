@@ -1,0 +1,29 @@
+{
+  "name": "site-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass scss/main.scss css/style.css --watch",
+    "compile:sass": "node-sass scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAGGIx1404/awwward-rebuild-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MAGGIx1404/awwward-rebuild-2/issues"
+  },
+  "homepage": "https://github.com/MAGGIx1404/awwward-rebuild-2#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "gsap": "^3.8.0",
+    "imagesloaded": "^4.1.4",
+    "locomotive-scroll": "^4.1.3"
+  }
+}

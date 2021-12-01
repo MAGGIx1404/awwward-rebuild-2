@@ -1,1 +1,90 @@
 // hamb style
+.hamb__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  z-index: 300;
+  background-color: $white;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8vh 10vw;
+  overflow: hidden;
+  will-change: transform;
+  transform: translateY(-100%);
+
+  a.close-btn {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    color: $color;
+    font-weight: 500;
+  }
+
+  &.active {
+    transform: translateY(0%);
+  }
+
+  .hamb-links {
+    p {
+      color: $color;
+      font-weight: 500;
+    }
+
+    a {
+      margin-left: 3rem;
+      font-size: $h3-font;
+      font-weight: 500;
+      color: $dark;
+      font-family: $can-font;
+      padding: 0.6rem 1rem;
+      transform: translateX(-50vw);
+      opacity: 0;
+
+      &:hover {
+        font-style: italic;
+        color: $color;
+      }
+    }
+  }
+
+  .hamb-links-two {
+    margin-top: 2rem;
+
+    p {
+      color: $color;
+      font-weight: 500;
+    }
+
+    a {
+      margin-left: 3rem;
+      font-size: $small-font;
+      font-weight: 500;
+      color: $dark;
+      padding: 0.4rem 0;
+      opacity: 0;
+      transform: translateY(5rem);
+
+      &:nth-of-type(1) {
+        margin-top: 1rem;
+      }
+
+      &:hover {
+        color: $color;
+      }
+    }
+  }
+
+  p.dev-p {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+
+    span {
+      a {
+        color: $color;
+      }
+    }
+  }
+}

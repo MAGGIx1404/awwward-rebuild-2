@@ -2,6 +2,7 @@ import { gsap, TweenMax, Expo, TweenLite } from "gsap";
 import preloadImages from "./utils";
 import LocomotiveScroll from "locomotive-scroll";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { easeIn, easeOut } from "./functions";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,4 +69,18 @@ ScrollTrigger.addEventListener("refresh", () => scroller.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
-// scroll base animation
+// hamb-animation
+
+function hambAnimation() {
+  let hamb__btn = document.getElementById("hamb__btn");
+  let close__btn = document.getElementById("close-btn");
+
+  hamb__btn.addEventListener("click", function () {
+    easeIn();
+  });
+  close__btn.addEventListener("click", function () {
+    easeOut();
+  });
+}
+
+hambAnimation();

@@ -5,17 +5,73 @@ footer {
 
   .mini-container {
     background-color: $soft;
-    height: 77vh;
+    height: 600px;
     padding: 3rem 7rem;
 
     .left-foot {
       flex: 0 0 60%;
       max-width: 60%;
+
+      p {
+        font-size: $small-font;
+        font-weight: 500;
+      }
+
+      h1 {
+        color: $color;
+        font-weight: 500;
+        margin-top: 2rem;
+      }
+
+      .footer-links {
+        width: 100%;
+        align-items: flex-start;
+        margin-top: 4rem;
+
+        .left-links,
+        .right-links {
+          flex: 0 0 50%;
+          max-width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          p {
+            padding: 1rem 0.5rem;
+            color: $color;
+            font-weight: 600;
+          }
+
+          a {
+            color: $dark;
+
+            &:hover {
+              color: $color;
+            }
+          }
+        }
+      }
     }
 
     .right-foot {
       flex: 0 0 40%;
       max-width: 40%;
+
+      p {
+        margin-top: 4rem;
+        font-size: $a-font;
+        color: $strong;
+        letter-spacing: 2px;
+        font-family: $can-font;
+        font-weight: 600;
+
+        span {
+          a {
+            color: $color;
+          }
+        }
+      }
     }
   }
 }

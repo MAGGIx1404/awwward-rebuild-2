@@ -185,6 +185,12 @@ html {
   align-items: center;
   justify-content: center; }
 
+.start-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; }
+
 .section {
   max-width: 100%;
   width: 100%;
@@ -299,14 +305,53 @@ footer {
   background-color: #000000; }
   footer .mini-container {
     background-color: #efe9d0;
-    height: 77vh;
+    height: 600px;
     padding: 3rem 7rem; }
     footer .mini-container .left-foot {
       flex: 0 0 60%;
       max-width: 60%; }
+      footer .mini-container .left-foot p {
+        font-size: 1rem;
+        font-weight: 500; }
+      footer .mini-container .left-foot h1 {
+        color: #8e6e35;
+        font-weight: 500;
+        margin-top: 2rem; }
+      footer .mini-container .left-foot .footer-links {
+        width: 100%;
+        align-items: flex-start;
+        margin-top: 4rem; }
+        footer .mini-container .left-foot .footer-links .left-links,
+        footer .mini-container .left-foot .footer-links .right-links {
+          flex: 0 0 50%;
+          max-width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start; }
+          footer .mini-container .left-foot .footer-links .left-links p,
+          footer .mini-container .left-foot .footer-links .right-links p {
+            padding: 1rem 0.5rem;
+            color: #8e6e35;
+            font-weight: 600; }
+          footer .mini-container .left-foot .footer-links .left-links a,
+          footer .mini-container .left-foot .footer-links .right-links a {
+            color: #1c1c1d; }
+            footer .mini-container .left-foot .footer-links .left-links a:hover,
+            footer .mini-container .left-foot .footer-links .right-links a:hover {
+              color: #8e6e35; }
     footer .mini-container .right-foot {
       flex: 0 0 40%;
       max-width: 40%; }
+      footer .mini-container .right-foot p {
+        margin-top: 4rem;
+        font-size: 1.2rem;
+        color: #543c10;
+        letter-spacing: 2px;
+        font-family: "canela";
+        font-weight: 600; }
+        footer .mini-container .right-foot p span a {
+          color: #8e6e35; }
 
 button,
 a {
@@ -343,6 +388,67 @@ a {
   .logo-btn img {
     width: 10rem;
     height: fit-content; }
+
+.hamb__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  z-index: 300;
+  background-color: #ffffff;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8vh 10vw;
+  overflow: hidden;
+  will-change: transform;
+  transform: translateY(-100%); }
+  .hamb__menu a.close-btn {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    color: #8e6e35;
+    font-weight: 500; }
+  .hamb__menu.active {
+    transform: translateY(0%); }
+  .hamb__menu .hamb-links p {
+    color: #8e6e35;
+    font-weight: 500; }
+  .hamb__menu .hamb-links a {
+    margin-left: 3rem;
+    font-size: clamp(20px, 10vw, 60px);
+    font-weight: 500;
+    color: #1c1c1d;
+    font-family: "canela";
+    padding: 0.6rem 1rem;
+    transform: translateX(-50vw);
+    opacity: 0; }
+    .hamb__menu .hamb-links a:hover {
+      font-style: italic;
+      color: #8e6e35; }
+  .hamb__menu .hamb-links-two {
+    margin-top: 2rem; }
+    .hamb__menu .hamb-links-two p {
+      color: #8e6e35;
+      font-weight: 500; }
+    .hamb__menu .hamb-links-two a {
+      margin-left: 3rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #1c1c1d;
+      padding: 0.4rem 0;
+      opacity: 0;
+      transform: translateY(5rem); }
+      .hamb__menu .hamb-links-two a:nth-of-type(1) {
+        margin-top: 1rem; }
+      .hamb__menu .hamb-links-two a:hover {
+        color: #8e6e35; }
+  .hamb__menu p.dev-p {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem; }
+    .hamb__menu p.dev-p span a {
+      color: #8e6e35; }
 
 /*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {

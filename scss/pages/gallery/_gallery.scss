@@ -1,0 +1,78 @@
+// gallery
+
+// webgl slider
+
+.dom-gl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.slider {
+  position: relative;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: -webkit-grab;
+  cursor: grab;
+  z-index: 2;
+
+  &::after {
+    content: attr(data-title);
+    font-size: 22vw;
+    font-weight: 500;
+    font-family: $can-font;
+    color: $color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    mix-blend-mode: difference;
+  }
+}
+.slider__inner {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+
+.slide {
+  overflow: hidden;
+}
+.slide:first-child {
+  position: relative;
+  height: 100vh;
+}
+.slide:not(:first-child) {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+}
+.slide__inner {
+  position: relative;
+  overflow: hidden;
+  width: 30vw;
+  //   padding-top: 56.5%;
+}
+.slide img {
+  display: none;
+  /*
+    height: 100%;
+    width: 140%;
+    position: absolute;
+    top: 0;
+    left: -20%;
+    object-fit: cover;
+    will-change: transform;
+    */
+}

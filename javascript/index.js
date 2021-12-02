@@ -14,9 +14,11 @@ const scroller = new LocomotiveScroll({
   getDirection: true, // display scoll direction (up & down)
   lerp: 0.01, //scroll smoothness
   smartphone: {
+    lerp: 0.5,
     smooth: true, //smooth scroll enabled for mobile
   },
   tablet: {
+    lerp: 0.5,
     smooth: true, //smooth scroll enabled for tablet & ipad
   },
   offset: [0, 0],

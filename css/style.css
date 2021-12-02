@@ -582,6 +582,10 @@ html.has-scroll-dragging {
       height: 8rem;
       overflow: hidden;
       margin: 0 0.5rem; }
+      @media only screen and (max-width: 1060px) {
+        .about .container .text-box h1 div {
+          width: 10rem;
+          height: 6rem; } }
       .about .container .text-box h1 div img {
         transition: all 0.5s ease;
         transform-origin: center; }
@@ -594,6 +598,9 @@ html.has-scroll-dragging {
     height: 800px;
     align-items: flex-end;
     justify-content: flex-end; }
+    @media only screen and (max-width: 1060px) {
+      .intro .mini-container {
+        padding: 0 2rem; } }
     .intro .mini-container .intro-content {
       flex: 0 0 45%;
       max-width: 45%;
@@ -681,6 +688,9 @@ html.has-scroll-dragging {
       right: 0;
       top: 50%;
       transform: translateY(-50%); }
+      @media only screen and (max-width: 1060px) {
+        .news .mini-container .img-box {
+          right: 2rem; } }
       .news .mini-container .img-box:hover img {
         filter: grayscale(0.4); }
       .news .mini-container .img-box img {
@@ -783,6 +793,9 @@ html.has-scroll-dragging {
     align-items: flex-start;
     position: relative;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 1060px) {
+      .oth .mini-container .oth-content {
+        padding: 0 2rem; } }
     .oth .mini-container .oth-content :after {
       content: "";
       height: 100%;
@@ -839,3 +852,11 @@ html.has-scroll-dragging {
       transform: translateY(5rem); }
     .oth .mini-container a.btn:hover::after {
       transform: translateY(0); }
+
+@media only screen and (max-width: 1060px) {
+  .title-2 {
+    font-size: 6vw; }
+  .title-3 {
+    font-size: 6vw; }
+  .sub-title {
+    font-size: 3vw; } }

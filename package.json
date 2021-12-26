@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/MAGGIx1404/awwward-rebuild-2#readme",
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^6.0.1",
+    "parcel": "^2.0.1",
+    "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
     "curtainsjs": "^8.1.3",
